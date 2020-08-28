@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 2008865 */
+  src: url('//at.alicdn.com/t/font_2008865_tygpghcu22i.eot');
+  src: url('//at.alicdn.com/t/font_2008865_tygpghcu22i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2008865_tygpghcu22i.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2008865_tygpghcu22i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2008865_tygpghcu22i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2008865_tygpghcu22i.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-css:before {
+  content: "\e6a1";
+  color: orange;
+}
+
+.icon-tools:before {
+  content: "\ec75";
+}
+
+.icon-js:before {
+  content: "\e63b";
+  color:blueviolet
+}
+
+.icon-vue:before {
+  content: "\e6b9";
+  color: greenyellow;
+}
+
+.icon-list-right:before {
+  content: "\e619";
+}
+

@@ -1,0 +1,42 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/load/load",
+			"style": {}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#13227a"
+			}
+
+		}, {
+			"path": "pages/index/vue/vue",
+			"style": {}
+		}, {
+			"path": "pages/index/javascript/javascript",
+			"style": {}
+		}, {
+			"path": "pages/index/css/css",
+			"style": {}
+		}, {
+			"path": "pages/index/tools/tools",
+			"style": {}
+		}, {
+			"path": "pages/pic/pic",
+			"style": {
+				"navigationBarTitleText": "图片详情"
+			}
+		}
+	],
+	"globalStyle": {
+		//#ifdef APP-PLUS || MP-WEIXIN
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "彭帅的笔记",
+		"navigationBarBackgroundColor": "#13227a",
+		"backgroundColor": "#F8F8F8"
+		//#endif
+
+	}
+}
