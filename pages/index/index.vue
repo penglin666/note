@@ -89,10 +89,7 @@
 					if (this.curPage < 0) this.curPage = 0;
 				}
 			}
-		},
-		onPageScroll(res){
-			console.log(res.scrollTop);//距离页面顶部距离
-		},
+		}
 	}
 </script>
 
