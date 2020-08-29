@@ -50,11 +50,7 @@
 					url: `/pages/pic/pic?index=${index}&imgs=${imgs}`
 				})
 			}
-		},
-		onPageScroll(res) {
-			console.log(res); //距离页面顶部距离
-		},
-
+		}
 	}
 </script>
 
