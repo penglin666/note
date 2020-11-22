@@ -1,0 +1,1 @@
+<view class="vue"><list vue-id="ba23f362-1" listIcon="{{curPageIcon}}" note="{{note}}" data-event-opts="{{[['^listStatus',[['changeStatus']]]]}}" bind:listStatus="__e" bind:__l="__l"></list></view>

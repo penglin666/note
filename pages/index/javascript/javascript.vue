@@ -1,6 +1,6 @@
 <template>
 	<view class="vue">
-		<list :listIcon="curPageIcon" :note="note"/>
+		<list :listIcon="curPageIcon" :note="note" @listStatus="changeStatus"/>
 	</view>
 </template>
 <script>
@@ -11,11 +11,11 @@
 		},
 		data() {
 			return {
-				note:[{title:"js"}]
+				note: []
 			};
 		},
 		created(){
-			
+			this.note=this.$store.state.js.jsState;
 		},
 		props: {
 			curPageIcon: {
@@ -23,7 +23,9 @@
 			}
 		},
 		methods:{
-			
+			changeStatus(index){
+				this.$store.commit("setStatus",index);
+			}
 		}
 	}
 </script>

@@ -1,0 +1,1 @@
+<view class="tools"><list vue-id="13b59665-1" listIcon="{{curPageIcon}}" note="{{note}}" bind:__l="__l"></list></view>

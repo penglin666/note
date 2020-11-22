@@ -4,7 +4,7 @@
 			 color:tarBar.color,
 			 boxShadow:tarBar.boxShadow
 			 }">
-		<view v-for="(item,index) in tarBar.options" :key="index" class="options" @click="curSelected(index,item.title)"
+		<view v-for="(item,index) in tarBar.options" :key="index" class="options" @tap="curSelected(index,item.title)"
 		 :class="{active:curPage==item.title||curPage===index}">
 			<!-- #ifdef MP-WEIXIN || APP-PLUS -->
 			<image :src="curPage==item.title||curPage==index?item.iconPathSelected:item.iconPath" mode="" class="icon" />

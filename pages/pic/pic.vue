@@ -1,20 +1,28 @@
 <template>
-	<view class="pic flex">
-		<movable-area scale-area>
-			<movable-view :scale-value="scale" scale="true" scale-min="1" scale-max="4" @click="dblclick" data-lastClick="lastClick">
-				<image :src="imgs[current]" @touchstart="touchStart" @touchend="touchEnd" v-if="imgs.length" />
-			</movable-view>
-		</movable-area>
+	<view class="pic-data">
+		<Title :curPageTitle="curPageTitle" />
+		<view class="pic flex" @tap="back">
+			<movable-area scale-area>
+				<movable-view :scale-value="scale" scale="true" scale-min="1" scale-max="4" @tap.stop="dblclick" data-lastClick="lastClick">
+					<image :src="imgs[current]" @touchstart="touchStart" @touchend="touchEnd" v-if="imgs.length" />
+				</movable-view>
+			</movable-area>
+		</view>
 	</view>
 </template>
 
 <script>
+	import Title from "@/components/Title.vue";
 	import {
 		getTouchData
 	} from '../../utils/util.js';
 	export default {
+		components: {
+			Title
+		},
 		data() {
 			return {
+				curPageTitle: '111',
 				current: null,
 				imgs: null,
 				touch: {
@@ -22,13 +30,15 @@
 					y: null
 				},
 				scale: 1,
-				touchStartTime: 0//判断双击数据
+				touchStartTime: 0 //判断双击数据
 			};
 		},
 		onLoad(op) {
+			console.log(op);
 			this.current = op.index;
 			const imgs = op.imgs.split(",");
 			this.imgs = imgs;
+			this.curPageTitle = op.title;
 		},
 		methods: {
 			touchStart(e) {
@@ -57,14 +67,17 @@
 					this.touchStartTime = new Date().getTime()
 				} else {
 					if (new Date().getTime() - this.touchStartTime <= 300) {
-						if (this.scale == 3) {
+						if (this.scale == 2) {
 							this.scale = 1;
 						} else {
-							this.scale = 3;
+							this.scale = 2;
 						}
 					}
 					this.touchStartTime = 0
 				}
+			},
+			back(){
+				uni.navigateBack()
 			}
 
 		},
@@ -74,14 +87,12 @@
 
 <style lang="scss">
 	.pic {
-		height: 100vh;
-		background-color: black;
-		align-items: center;
-
+		height: calc(100vh - 80px);
+		flex-direction: column;
+		justify-content: center;
 		movable-area {
-			height: 50vh;
+			height: 36%;
 			width: 100vw;
-
 			movable-view {
 				width: 100%;
 				height: 100%;

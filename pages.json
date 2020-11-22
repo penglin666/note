@@ -26,7 +26,8 @@
 		}, {
 			"path": "pages/pic/pic",
 			"style": {
-				"navigationBarTitleText": "图片详情"
+				"navigationStyle": "custom",
+				"navigationBarBackgroundColor": "#13227a"
 			}
 		}
 	],

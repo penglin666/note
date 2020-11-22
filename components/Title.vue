@@ -28,7 +28,7 @@
 			})
 			let capsuleHeight=uni.getMenuButtonBoundingClientRect().height;//获取右上角胶囊按钮的高度
 			let capsuleBottom=uni.getMenuButtonBoundingClientRect().bottom;//获取右上角胶囊按钮的底部坐标
-			this.titleHeight=(capsuleBottom-this.statusBarHeight)+(capsuleBottom-this.statusBarHeight-capsuleHeight);//注意微信工具显示
+			let a = this.titleHeight=(capsuleBottom-this.statusBarHeight)+(capsuleBottom-this.statusBarHeight-capsuleHeight);//注意微信工具显示
 			//#endif
 		}
 	}

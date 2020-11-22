@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#13227a",
+  "usingComponents": {
+    "title": "/components/Title"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#13227a",
+  "usingComponents": {
+    "title": "/components/Title",
+    "vue": "/pages/index/vue/vue",
+    "javascript": "/pages/index/javascript/javascript",
+    "css": "/pages/index/css/css",
+    "tools": "/pages/index/tools/tools",
+    "tar-bar": "/components/tarbar"
+  }
+}

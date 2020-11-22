@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/load/load",
+    "pages/index/index",
+    "pages/index/vue/vue",
+    "pages/index/javascript/javascript",
+    "pages/index/css/css",
+    "pages/index/tools/tools",
+    "pages/pic/pic"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "彭帅的笔记",
+    "navigationBarBackgroundColor": "#13227a",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap82.json"
+}

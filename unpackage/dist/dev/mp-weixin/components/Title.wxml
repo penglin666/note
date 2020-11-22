@@ -1,0 +1,1 @@
+<view class="title flex" style="{{'padding-top:'+(statusBarHeight+'px')+';'+('height:'+(titleHeight+'px')+';')}}"><text>{{curPageTitle}}</text></view>

@@ -1,7 +1,7 @@
 <template>
 	<view class="list">
 		<view class="list-item" v-for="(item,index) in note" :key="index">
-			<view :class="[{'cur-list-title':item.show},'list-title','flex']" @click="status(index)">
+			<view :class="[{'cur-list-title':item.show},'list-title','flex']" @tap="status(index)">
 				<view :class="[{'icon-vue':listIcon==0},
 				{'icon-js':listIcon==1},
 				{'icon-css':listIcon==2},
@@ -16,7 +16,7 @@
 					<view style="text-indent: 2rem;">{{value.text}}</view>
 					<view class="pic-explain" v-if="value.imgs.length">
 						<view v-for="(url,i) in value.imgs" :key="i">
-							<image :src="url" @click="goPic(i,value.imgs)" />
+							<image :src="url" @tap="goPic(i,value.imgs,value.smTitle)" />
 						</view>
 					</view>
 					<view v-else class="noPic-explain">
@@ -45,9 +45,9 @@
 			status(index) {
 				this.$emit('listStatus', index);
 			},
-			goPic(index, imgs) {
+			goPic(index, imgs,title) {
 				uni.navigateTo({
-					url: `/pages/pic/pic?index=${index}&imgs=${imgs}`
+					url: `/pages/pic/pic?index=${index}&imgs=${imgs}&title=${title}`
 				})
 			}
 		}
