@@ -112,7 +112,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var list = function list() {__webpack_require__.e(/*! require.ensure | components/list */ "components/list").then((function () {return resolve(__webpack_require__(/*! @/components/list.vue */ 80));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var list = function list() {__webpack_require__.e(/*! require.ensure | components/list */ "components/list").then((function () {return resolve(__webpack_require__(/*! @/components/list.vue */ 97));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -143,7 +143,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 55:
+/***/ 57:
 /*!*******************************************************************************************!*\
   !*** C:/Users/彭林/Desktop/note/main.js?{"page":"pages%2Findex%2Fjavascript%2Fjavascript"} ***!
   \*******************************************************************************************/
@@ -159,5 +159,5 @@ createPage(_javascript.default);
 
 /***/ })
 
-},[[55,"common/runtime","common/vendor"]]]);
+},[[57,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/index/javascript/javascript.js.map

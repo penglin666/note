@@ -1,1 +1,1 @@
-<view class="tools"><list vue-id="13b59665-1" listIcon="{{curPageIcon}}" note="{{note}}" bind:__l="__l"></list></view>
+<view class="tools"><navigator url="/pages/map/map"><view class="list-title flex"><view class="icon-tools iconfont"></view><view class="iconfont">地图</view><view class="{{['iconfont','icon-list-right',[(item.show)?'iconAni':'']]}}"></view></view></navigator></view>

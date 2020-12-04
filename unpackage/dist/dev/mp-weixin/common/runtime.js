@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/Title":1,"components/list":1,"components/tarbar":1};
+/******/ 		var cssChunks = {"components/toast":1,"components/Title":1,"components/list":1,"components/tarbar":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/Title":"components/Title","components/list":"components/list","components/tarbar":"components/tarbar"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/toast":"components/toast","components/Title":"components/Title","components/list":"components/list","components/tarbar":"components/tarbar"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

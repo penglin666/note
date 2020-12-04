@@ -65,7 +65,7 @@
 				}
 			}
 		},
-		created() {
+		onLoad() {
 			uni.$on('titleBoxHeight', data => console.log(data))
 		},
 		methods: {

@@ -6,7 +6,8 @@
     "pages/index/javascript/javascript",
     "pages/index/css/css",
     "pages/index/tools/tools",
-    "pages/pic/pic"
+    "pages/pic/pic",
+    "pages/map/map"
   ],
   "subPackages": [],
   "window": {
@@ -15,6 +16,13 @@
     "navigationBarBackgroundColor": "#13227a",
     "backgroundColor": "#F8F8F8"
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap82.json"
+  "permission": {
+    "scope.userLocation": {
+      "desc": "test"
+    }
+  },
+  "usingComponents": {
+    "toast": "/components/toast"
+  },
+  "sitemapLocation": "sitemap29.json"
 }

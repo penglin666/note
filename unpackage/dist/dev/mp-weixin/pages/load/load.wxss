@@ -62,8 +62,7 @@ page {
   position: absolute;
   width: 50%;
   height: 300rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .load .ani > view > image:first-child {
   top: -300px;

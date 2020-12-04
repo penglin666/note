@@ -54,8 +54,7 @@
   -webkit-justify-content: center;
           justify-content: center;
   border: 1rpx solid #13227a;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .tarbar .options.active {
   color: #13227a;
